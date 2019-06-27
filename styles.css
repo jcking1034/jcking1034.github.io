@@ -2,7 +2,10 @@ body {
     font-family: 'Roboto Mono', monospace;
     font-size: 2em;
     margin: 0;
+
     scroll-snap-type: y mandatory;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
 }
 
 nav {
@@ -35,8 +38,6 @@ section {
     min-height: 100vh;
     padding: 1.5%;
     scroll-snap-align: start;
-    -webkit-overflow-scrolling: touch;
-    height: 100%
 }
 
 img {
