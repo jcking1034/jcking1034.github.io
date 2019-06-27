@@ -4,7 +4,6 @@ body {
     margin: 0;
 
     scroll-snap-type: y mandatory;
-    -webkit-scroll-snap-type: proximity;
 }
 
 nav {
@@ -37,7 +36,6 @@ section {
     min-height: 100vh;
     padding: 1.5%;
     scroll-snap-align: start;
-    -webkit-scroll-snap-coordinate: 0% 0%;
 }
 
 img {
