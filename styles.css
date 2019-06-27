@@ -1,0 +1,52 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2em;
+    margin: 0;
+    scroll-snap-type: y mandatory;
+}
+
+nav {
+    background-color: green;
+    border-bottom: 0.1em solid rgb(34, 100, 48);
+    height: 100%;
+    width: 100%;
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 1.5%;
+}
+
+li {
+    display: inline;
+}
+
+main {
+    height: 90vh;
+    padding: 1.5%;
+}
+
+section {
+    min-height: 100vh;
+    padding: 1.5%;
+    scroll-snap-align: start;
+}
+
+img {
+    height: 2em;
+    width: 2em;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
