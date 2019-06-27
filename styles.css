@@ -5,7 +5,6 @@ body {
 
     scroll-snap-type: y mandatory;
     -webkit-scroll-snap-type: mandatory;
-    -webkit-scroll-snap-coordinate: 0% 0%
 }
 
 nav {
@@ -14,8 +13,8 @@ nav {
     height: 100%;
     width: 100%;
 
-    position: -webkit-sticky;
     position: sticky;
+    position: -webkit-sticky;
     top: 0;
 }
 
@@ -38,6 +37,7 @@ section {
     min-height: 100vh;
     padding: 1.5%;
     scroll-snap-align: start;
+    -webkit-scroll-snap-coordinate: 0% 0%;
 }
 
 img {
