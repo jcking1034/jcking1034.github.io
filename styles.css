@@ -4,7 +4,7 @@ body {
     margin: 0;
 
     scroll-snap-type: y mandatory;
-    -webkit-scroll-snap-type: mandatory;
+    -webkit-scroll-snap-type: proximity;
 }
 
 nav {
