@@ -1,16 +1,23 @@
 body {
     font-family: 'Roboto Mono', monospace;
     font-size: 2em;
+    color: rgba(51, 51, 51, 1);
+    background-color: rgba(230, 228, 227, 1);
+
     margin: 0;
 
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
 
+
+/* Nav Bar */
+
 nav {
-    background-color: green;
-    border-bottom: 0.1em solid rgb(34, 100, 48);
+    background-color: rgba(48, 66, 87, 1);
     height: 100%;
     width: 100%;
+    line-height: 1.5em;
 
     position: sticky;
     position: -webkit-sticky;
@@ -18,17 +25,49 @@ nav {
 }
 
 ul {
+    text-align: right;
     list-style-type: none;
     margin: 0;
-    padding: 0 0 0 1.5%;
+    padding: 0 1.5% 0 0;
 }
 
 li {
     display: inline;
 }
 
+/* Images */
+
+img {
+    height: 2em;
+    width: 2em;
+}
+
+.contactimg {
+    object-fit: contain;
+}
+
+
+/* Links */
+
+a {
+    color: rgb(207, 207, 207);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(207, 207, 207);
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+/* Sections */
+
 main {
-    height: 90vh;
+    background-color: rgba(209, 213, 222, 1);
+    height: 100vh;
     padding: 1.5%;
 }
 
@@ -38,16 +77,18 @@ section {
     scroll-snap-align: start;
 }
 
-img {
-    height: 2em;
-    width: 2em;
+#about {
+    background-color: rgb(157, 165, 182);
 }
 
-a {
-    color: gray;
-    text-decoration: none;
+#experience {
+    background-color: rgba(209, 213, 222, 1);
 }
 
-a:hover {
-    color: black;
+#contact {
+    background-color: rgb(164, 174, 199);
+}
+
+#community {
+    background-color: rgb(140, 156, 197);
 }
