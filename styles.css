@@ -1,13 +1,28 @@
+/* General */
+
 body {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Fira Mono', monospace;
     font-size: 2em;
     color: rgba(51, 51, 51, 1);
     background-color: rgba(230, 228, 227, 1);
 
     margin: 0;
 
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
+    /* scroll-snap-type: y mandatory;
+    scroll-behavior: smooth; */
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+
+h4 {
+    font-size: 2.25em;
+    line-height: 0em;
 }
 
 
@@ -24,16 +39,57 @@ nav {
     top: 0;
 }
 
-ul {
+nav p {
+    display: inline-block;
+
+    margin: 0;
+    padding: 0 0 0 1%;
+    color: rgb(255, 255, 255);
+}
+
+nav ul {
+    float: right;
+
     text-align: right;
     list-style-type: none;
     margin: 0;
     padding: 0 1.5% 0 0;
 }
 
-li {
+nav li {
     display: inline;
 }
+
+/* Nav links */
+
+nav a {
+    color: rgb(207, 207, 207);
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: rgb(207, 207, 207);
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+/* Links */
+a {
+    color: rgb(80, 80, 80);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(80, 80, 80);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 
 /* Images */
 
@@ -46,49 +102,53 @@ img {
     object-fit: contain;
 }
 
-
-/* Links */
-
-a {
-    color: rgb(207, 207, 207);
-    text-decoration: none;
-}
-
-a:visited {
-    color: rgb(207, 207, 207);
-}
-
-a:hover {
-    color: rgb(255, 255, 255);
-}
-
-
 /* Sections */
 
 main {
-    background-color: rgba(209, 213, 222, 1);
+    background-image: url("resources/bg.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-color: rgb(161, 189, 255);
+
+    color: rgb(0, 0, 0);
+
     height: 100vh;
+    padding: 10% 15% 10% 15%;
+}
+
+#mainContain {
+    background-color: rgba(230, 241, 255, 0.75);
+    border: 0.25em solid rgba(51, 51, 51, 1);
+    border-radius: 0.1em;
+
     padding: 1.5%;
+
+    text-align: center;
 }
 
 section {
     min-height: 100vh;
-    padding: 1.5%;
-    scroll-snap-align: start;
+    padding: 1.5% 20% 1.5% 20%;
+    /* scroll-snap-align: start; */
 }
 
 #about {
-    background-color: rgb(157, 165, 182);
+    background-color: rgb(255, 255, 255);
 }
 
 #experience {
-    background-color: rgba(209, 213, 222, 1);
-}
-
-#contact {
-    background-color: rgb(164, 174, 199);
+    background-color: rgb(230, 241, 255);
 }
 
 #community {
-    background-color: rgb(140, 156, 197);
+    background-color: rgb(255, 255, 255);
 }
+
+#contact {
+    background-color: rgb(230, 241, 255);
+    min-height: 20vh;
+}
+

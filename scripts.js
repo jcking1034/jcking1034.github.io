@@ -3,6 +3,5 @@ function scrollDetect() {
         document.getElementsByTagName("nav")[0].style.display = "block"
     } else {
         document.getElementsByTagName("nav")[0].style.display = "none"
-
     }
 }
