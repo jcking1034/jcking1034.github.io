@@ -33,8 +33,8 @@ h3 {
 
 h4 {
     font-size: 2.25em;
+    margin-bottom: 0.25em;
 }
-
 
 /* Nav Bar */
 
@@ -196,7 +196,7 @@ section {
 
 /* Styling for mobile and small screens */
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px), (-webkit-device-pixel-ratio : 3) {
     h1 {
         font-size: 2.5em;
     }
