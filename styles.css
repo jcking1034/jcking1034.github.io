@@ -104,8 +104,6 @@ nav a:hover {
 
 #downArrow:hover {
     border-width: 0em 0.5em 0.5em 0em;
-    /* border-bottom-width: 4px;
-    border-right-width: 4px; */
 }
 
 /* Links */
@@ -197,17 +195,10 @@ section {
 /* Styling for mobile and small screens */
 
 @media (max-width: 900px), (-webkit-device-pixel-ratio : 3) {
-    /* h1 {
+
+    body {
         font-size: 2.5em;
     }
-    
-    h3 {
-        font-size: 2.25em;
-    }
-    
-    h4 {
-        font-size: 2em;
-    } */
 
     main {
         min-height: 0em;
