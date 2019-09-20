@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    font-family: 'Fira Mono', monospace;
+    font-family: 'Mukta', sans-serif;
     font-size: 2em;
     color: var(--color-dark-gray);
     background-color: var(--color-dark-gray);
@@ -39,6 +39,7 @@ h4 {
 /* Nav Bar */
 
 nav {
+    font-family: 'Fira Mono', monospace;
     background-color: var(--color-blue);
     height: 100%;
     width: 100%;
