@@ -1,216 +1,68 @@
-/* General */
-
 :root {
-    --color-white: rgb(255, 255, 255);
-    --color-light-blue: rgb(230, 241, 255);
-    --color-light-blue-transparent: rgba(230, 241, 255, 0.75);
-    --color-blue: rgba(48, 66, 87, 1);
-    --color-light-gray: rgb(207, 207, 207);
     --color-gray: rgb(100, 100, 100);
     --color-dark-gray: rgba(51, 51, 51, 1);
-}
-
-html {
-	scroll-behavior: smooth;
+    --color-black: rgb(0, 0, 0);
 }
 
 body {
     font-family: 'Mukta', sans-serif;
-    font-size: 2em;
-    color: var(--color-dark-gray);
-    background-color: var(--color-dark-gray);
-
+    font-size: 1em;
+    text-align: center;
     margin: 0;
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 5em;
+    color: var(--color-black);
 }
-
-h3 {
-    font-size: 2.5em;
-}
-
-h4 {
-    font-size: 2.25em;
-    margin-bottom: 0.25em;
-}
-
-/* Nav Bar */
-
-nav {
-    font-family: 'Fira Mono', monospace;
-    background-color: var(--color-blue);
-    height: 100%;
-    width: 100%;
-    line-height: 1.5em;
-
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-}
-
-nav p {
-    display: inline-block;
-
-    margin: 0;
-    padding: 0 0 0 1%;
-    color: var(--color-white);
-}
-
-nav ul {
-    float: right;
-
-    text-align: right;
-    list-style-type: none;
-    margin: 0;
-    padding: 0 1.5% 0 0;
-}
-
-nav li {
-    display: inline;
-}
-
-
-/* Nav links */
-
-nav a {
-    color: var(--color-light-gray);
-    text-decoration: none;
-}
-
-nav a:visited {
-    color: var(--color-light-gray);
-}
-
-nav a:hover {
-    color: var(--color-white);
-    text-decoration: none;
-}
-
-
-/* Down Arrow */
-
-#downArrow {
-    box-sizing: border-box;
-    height: 5vw;
-    width: 5vw;
-    border-style: solid;
-    border-color: var(--color-white);
-    border-width: 0em 0.25em 0.25em 0em;
-    transform: rotate(45deg);
-    transition: border-width 150ms ease-in-out;
-    margin: auto;
-}
-
-#downArrow:hover {
-    border-width: 0em 0.5em 0.5em 0em;
-}
-
-/* Links */
 
 a {
     color: var(--color-gray);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a:visited {
     color: var(--color-gray);
+    text-decoration: none;
 }
 
 a:hover {
     color: var(--color-dark-gray);
+    text-decoration: underline;
 }
 
-
-/* Images */
-
-.icons {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
+#container {
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    border: 0.25em solid black;
 }
 
-.contactimg {
-    height: 1em;
-    width: 1em;
-    object-fit: contain;
+#nameContainer {
+    margin: 0;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Sections */
-
-main {
-    background-image: url("resources/bg.jpg");
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    background-color: var(--color-light-blue);
-
-    color: var(--color-dark-gray);
-
-    padding: 5% 15% 5% 15%;
-
-    min-height: 100vh;
+#name {
+    margin: 0;
 }
 
-#mainContain {
-    background-color: var(--color-light-blue-transparent);
-    border: 0.25em solid var(--color-dark-gray);
-    border-radius: 0.1em;
-
-    padding: 1.5%;
-
-    margin-bottom: 3%;
+#links {
+    margin: 0;
+    height: 25%;
 }
 
-#mainContain h1 {
-    text-align: center;
-}
-
-section {
-    min-height: 100vh;
-    padding: 1.5% 20% 1.5% 20%;
-}
-
-#about {
-    background-color: var(--color-white);
-}
-
-#experience {
-    background-color: var(--color-light-blue);
-}
-
-#community {
-    background-color: var(--color-white);
-}
-
-#contact {
-    background-color: var(--color-light-blue);
-    min-height: 20vh;
-}
-
-
-/* Styling for mobile and small screens */
-
-@media (max-width: 900px), (-webkit-device-pixel-ratio : 3) {
-
-    body {
-        font-size: 2.5em;
-    }
-
-    main {
-        min-height: 0em;
-    }
-
-    section {
-        padding: 5%;
-        min-height: 0em;
-    }
-
-    body nav > * {
-        display: none;
-    }
+#backgroundCanvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
